@@ -9,12 +9,12 @@ pipeline{
   stages {
     stage('Build'){
       steps{
-        bat 'mvn -f CodingChallengeMaven\pom.xml install'
+        bat 'mvn -f CodingChallengeMaven/pom.xml install'
       }
      }
     stage('Test'){
       steps{
-         bat 'mvn -f CodingChallengeMaven\pom.xml test'
+         bat 'mvn -f CodingChallengeMaven/pom.xml test'
       }
       
   }
