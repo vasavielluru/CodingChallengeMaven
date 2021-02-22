@@ -24,7 +24,7 @@ pipeline{
     stage('Build'){
       steps{
        
-       sh 'mvn -f CodingChallenge/NewMavenClass/pom.xml clean install'
+       sh 'mvn -f NewMavenClass/pom.xml clean install'
       }
        post {
                 success {
