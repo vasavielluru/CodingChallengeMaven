@@ -16,6 +16,11 @@ pipeline{
                 '''
             }
         }
+        stage('path') {
+        steps{
+             sh 'dir'
+        }
+        }
     stage('Build'){
       steps{
        
