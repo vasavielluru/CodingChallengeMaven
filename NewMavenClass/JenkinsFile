@@ -15,7 +15,7 @@ pipeline{
         }
         stage('compile') {
         steps{
-             sh 'mvn -f NewMavenClass/pom.xml clean compile'
+             bat 'mvn -f NewMavenClass/pom.xml clean compile'
         }
         }
     stage('Build'){
@@ -25,7 +25,7 @@ pipeline{
       }
        post {
                 success {
-                    sh 'mvn -f NewMavenClass/pom.xml test' 
+                    bat 'mvn -f NewMavenClass/pom.xml test' 
                 }
             }
      }
