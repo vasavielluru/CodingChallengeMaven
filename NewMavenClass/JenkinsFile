@@ -13,9 +13,9 @@ pipeline{
                 echo "Pipeline started"
             }
         }
-        stage('path') {
+        stage('compile') {
         steps{
-             sh 'dir'
+             sh 'mvn -f NewMavenClass/pom.xml clean compile'
         }
         }
     stage('Build'){
