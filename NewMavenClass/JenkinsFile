@@ -10,7 +10,7 @@ pipeline{
   stages {
   stage ('Initialize') {
             steps {
-                echo ""Pipeline started
+                echo "Pipeline started"
             }
         }
         stage('path') {
